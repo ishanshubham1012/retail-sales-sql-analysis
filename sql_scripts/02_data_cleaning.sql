@@ -22,8 +22,13 @@ from sales
 ,
 cte2 as
 (
-select transaction_id from cte where rn = 2)
-select * from cte
+select 
+       transaction_id 
+from cte 
+ where rn = 2)
+-- Following code will highlight the original and duplicated column both
+select * 
+ from cte
 where transaction_id in (select transaction_id from cte where rn = 2)
 ;
 -- Removing duplicates by rebuilding the table with distinct records
