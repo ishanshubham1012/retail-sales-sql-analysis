@@ -22,7 +22,7 @@ with cte as
 select
        product_name,
 	   sum(case when status = "cancelled" then 1 else 0 end) as ttl_can,
-       rank() over(order by sum(case when status = "cancelled" then 1 else 0 end) desc) as rn
+       dense_rank() over(order by sum(case when status = "cancelled" then 1 else 0 end) desc) as rn
 from sales 
 group by product_name
 )
