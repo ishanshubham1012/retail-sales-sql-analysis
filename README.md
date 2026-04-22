@@ -12,20 +12,20 @@ The primary data structure is the `sales_store` table, which serves as the found
 
 | Column Name | Data Type | Description |
 | :--- | :--- | :--- |
-| **transaction_id** | VARCHAR(20) | Unique identifier for each sales transaction. |
-| **customer_id** | VARCHAR(20) | Unique identifier for the customer. |
-| **customer_name** | VARCHAR(30) | Full name of the customer. |
+| **transaction_id** | VARCHAR(255) | Unique identifier for each sales transaction. |
+| **customer_id** | VARCHAR(255) | Unique identifier for the customer. |
+| **customer_name** | VARCHAR(255) | Full name of the customer. |
 | **customer_age** | INT | Age of the customer at the time of purchase. |
-| **gender** | VARCHAR(20) | Gender of the customer. |
-| **product_id** | VARCHAR(20) | Unique identifier for the product sold. |
-| **product_name** | VARCHAR(20) | Name of the product. |
-| **product_category** | VARCHAR(20) | Category/Department of the product. |
+| **gender** | VARCHAR(255) | Gender of the customer. |
+| **product_id** | VARCHAR(255) | Unique identifier for the product sold. |
+| **product_name** | VARCHAR(255) | Name of the product. |
+| **product_category** | VARCHAR(255) | Category/Department of the product. |
 | **quantity** | INT | Number of units purchased. |
 | **price** | FLOAT | Unit price of the product. |
-| **payment_mode** | VARCHAR(20) | Method used for payment (e.g., Credit Card, UPI). |
+| **payment_mode** | VARCHAR(255) | Method used for payment (e.g., Credit Card, UPI). |
 | **purchase_date** | DATE | Calendar date of the transaction. |
 | **time_of_purchase**| TIME | Exact timestamp of the transaction. |
-| **status** | VARCHAR(20) | Current state of the order (Delivered, Cancelled, Returned, Pending). |
+| **status** | VARCHAR(255) | Current state of the order (Delivered, Cancelled, Returned, Pending). |
 
 ---
 
