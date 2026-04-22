@@ -25,7 +25,7 @@ The primary data structure is the `sales_store` table, which serves as the found
 | **payment_mode** | VARCHAR(20) | Method used for payment (e.g., Credit Card, UPI). |
 | **purchase_date** | DATE | Calendar date of the transaction. |
 | **time_of_purchase**| TIME | Exact timestamp of the transaction. |
-| **status** | VARCHAR(20) | Current state of the order (Delivered, Cancelled, Returned). |
+| **status** | VARCHAR(20) | Current state of the order (Delivered, Cancelled, Returned, Pending). |
 
 ---
 
