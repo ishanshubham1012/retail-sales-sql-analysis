@@ -60,7 +60,7 @@ The following analytical queries were developed to extract strategic value from 
 
 ## Technologies Used
 * **Language:** SQL (MySQL Dialect)
-* **Key Techniques:** * **Window Functions:** `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()` for complex ordering.
+* **Key Techniques:**  **Window Functions:** `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()` for complex ordering.
     * **CTEs:** For modular and readable query logic.
     * **Aggregations:** `SUM()`, `COUNT()`, `AVG()` with `GROUP BY` for data summarization.
     * **Conditional Logic:** `CASE WHEN` statements for categorical bucketing and rate calculations.
