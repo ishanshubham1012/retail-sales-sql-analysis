@@ -24,7 +24,7 @@ CREATE TABLE sales_store (
 -- =================================================================================
 
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/sales_store_dataset - Copy.csv'
-INTO TABLE sales11
+INTO TABLE sales_store
 
 -- 1. DEFINE DATA FORMATTING
 -- Tells MySQL how to distinguish between different cells and rows
