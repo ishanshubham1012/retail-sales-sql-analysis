@@ -30,7 +30,7 @@ INTO TABLE sales_store
 -- Tells MySQL how to distinguish between different cells and rows
 FIELDS TERMINATED BY ','          -- Identifies the comma as the column separator
 OPTIONALLY ENCLOSED BY '"'       -- Allows MySQL to correctly read data if it contains quotes (e.g., "Sofa,Blue")
-LINES TERMINATED BY '\n'          -- Defines the hidden 'newline' character as the end of a row
+LINES TERMINATED BY '\r\n'       -- Uses \r (Carriage Return) + \n (Line Feed) for Windows compatibility
 IGNORE 1 LINES                    -- Skips the first row (the header names) in the CSV
 
 -- 2. COLUMN MAPPING (Variable List)
